@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <title>test</title>
+</head>
+
+<body>
+ <main>
+  <nav>
+   <ul>
+    <li>
+     <a href="#">Home</a>
+    </li>
+        <li>
+     <a href="#">Open sidebar</a>
+    </li>
+        <li>
+     <a href="#">Change theme</a>
+    </li>
+   </ul>
+  </nav>
+  <h1>Todos</h1>
+  <ul id="list">
+   <!-- A junior should know how server side rendering works -->
+   <% todos.forEach(function(todo) { %>
+   <li>
+    <%= todo %>
+   </li>
+   <% }); %>
+  </ul>
+  <form id="form">
+   <input id="todo-field" type="text" name="search" placeholder="search">
+  </form>
+
+ </main>
+ <script src="/junior/test.v1.js"></script>
+</body>
+
+</html>
